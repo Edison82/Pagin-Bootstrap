@@ -1,48 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
-    <title>Suscribete</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+  <title>Suscribete</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../img/TecnoMente.png" width="40px" height="40px"
-              class="img-thumbnail"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../Index.html">Principal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Paginas_ex/Suscribete.html">Suscribete</a>
-              </li>
-              <li>
-                  <a class="nav-link" href="#" background-color="white" >Bienvenido a ser parte de Nosotros</a>
-              </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../img/TecnoMente.png" width="40px" height="40px"
+          class="img-thumbnail"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../Index.html">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Paginas_ex/Suscribete.html">Suscribete</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Suscribete para recibir más información</h1>
         </div>
-      </nav>
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>Empresas que apoyan el Metaverso</h1>
-            </div>
-    
-          </div>
-    
+        <div class="md-3">
+          <form>
+            <section>
+
+              <article>
+                <div class="row g-3 aling-item-center">
+                  <div class="col-auto">
+                    <label for="">Tipo de suscripción:</label>
+                  </div>
+                  <select class="col-auto" name="tiposuscripcion" id="tipodesuscripcion">
+                    <option value="-">Seleccione una Opcion</option>
+                    <option value=" Semanal ">Semanal</option>
+                    <option value=" Mensual ">Mensual</option>
+                    <option value=" Anual ">Anual</option>
+                  </select>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <div >
+                    <label for="">Nombres:</label>
+                  </div>
+                  <input type="text" name="nombres" id="nombres" placeholder="Escribe tu nombre completo">
+                </div>
+              </article>
+
+              <article class="elemnt-form">
+                <div class="label">
+                  <label for="">Email</label>
+                </div>
+                <input type="text" name="email" id="email" placeholder="Escribe tu correo">
+              </article>
+
+              <article class="elemnt-form">
+                <div class="label">
+                  <label for="">Temas de los que quieres enterarte</label>
+                </div>
+                <textarea name="mediodepago" id="mediodepago" cols="100" rows="10"></textarea>
+              </article>
+
+              <article class="elemnt-form">
+                <div class="label">
+                  <label for="">Medio de pago</label>
+                </div>
+                <input type="checkbox" name="echk1" id="echk1" value="html"> Efecty
+                <input type="checkbox" name="echk2" id="echk2" value="css"> Tarjeta
+                <input type="checkbox" name="echk3" id="echk3" value="js"> Bitcoin 
+              </article>
+<br>
+              <article class="btn-article">
+                <button class="btn btn-primary" type="submit" onclick="siguiente()"> Siguiente </button>
+              </article>
+
+            </section>
+          </form>
         </div>
-        <script src="Js/jquery-3.6.0.min.js"></script>
-        <script src="boostrap/js/bootstrap.min.js"></script>
-      
+
+      </div>
+      <br>
+    </div>
+    <footer class="bg-dark bg-gradient">
+          <br>
+          <img src=" ../img/youtube.svg" class="bg-white" width="30px" height="30px" alt="">
+      <label class="text-white"><b>YouTube</b></label><br><br>
+      <img src="../img/facebook.svg" class="bg-white" width="30px" height="30px" alt="">
+      <label class="text-white"><b>Facebook</b></label>
+      <h6 class="text-white text-center">© 2022 Metaverso.Derechos reservados</h6>
+    </footer>
+    <script src="../Js/Form_Suscrib.js"></script>
+    <script src="../Js/jquery-3.6.0.min.js"></script>
+    <script src="../boostrap/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
